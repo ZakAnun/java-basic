@@ -1,0 +1,81 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/bin/javap -c -verbose Operator\$1.class
+Classfile /Users/liminglin/github/java-basic/build/classes/java/main/enumdemo/Operator$1.class
+  Last modified Jun 14, 2021; size 590 bytes
+  MD5 checksum 86fb5a6f8bc4e42f7d0651bfb08f85a9
+  Compiled from "Operator.java"
+// Operator$1 内部类是继承 Operator 的（就是说每个枚举，都会生成一个对应的内部类）
+final class enumdemo.Operator$1 extends enumdemo.Operator
+  minor version: 0
+  major version: 52
+  flags: ACC_FINAL, ACC_SUPER, ACC_ENUM
+Constant pool:
+   #1 = Methodref          #3.#22         // enumdemo/Operator."<init>":(Ljava/lang/String;ILjava/lang/String;Lenumdemo/Operator$1;)V
+   #2 = Class              #23            // enumdemo/Operator$1
+   #3 = Class              #24            // enumdemo/Operator
+   #4 = Utf8               <init>
+   #5 = Utf8               (Ljava/lang/String;ILjava/lang/String;)V
+   #6 = Utf8               Code
+   #7 = Utf8               LineNumberTable
+   #8 = Utf8               LocalVariableTable
+   #9 = Utf8               this
+  #10 = Utf8               InnerClasses
+  #11 = Utf8               Lenumdemo/Operator$1;
+  #12 = Utf8               operator
+  #13 = Utf8               Ljava/lang/String;
+  #14 = Utf8               calculate
+  #15 = Utf8               (II)I
+  #16 = Utf8               a
+  #17 = Utf8               I
+  #18 = Utf8               b
+  #19 = Utf8               SourceFile
+  #20 = Utf8               Operator.java
+  #21 = Utf8               EnclosingMethod
+  #22 = NameAndType        #4:#25         // "<init>":(Ljava/lang/String;ILjava/lang/String;Lenumdemo/Operator$1;)V
+  #23 = Utf8               enumdemo/Operator$1
+  #24 = Utf8               enumdemo/Operator
+  #25 = Utf8               (Ljava/lang/String;ILjava/lang/String;Lenumdemo/Operator$1;)V
+{
+  // 构造方法新增的两个参数
+  enumdemo.Operator$1(java.lang.String, int, java.lang.String);
+    descriptor: (Ljava/lang/String;ILjava/lang/String;)V
+    flags:
+    Code:
+      stack=5, locals=4, args_size=4
+         0: aload_0
+         1: aload_1
+         2: iload_2
+         3: aload_3
+         4: aconst_null
+         5: invokespecial #1                  // Method enumdemo/Operator."<init>":(Ljava/lang/String;ILjava/lang/String;Lenumdemo/Operator$1;)V
+         8: return
+      LineNumberTable:
+        line 4: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Lenumdemo/Operator$1;
+            0       9     3 operator   Ljava/lang/String;
+  // 相当于代码 name: 我们定义的名称，ordinal: 顺序号，根据定义的顺序分别赋值一个整型，从 0 开始
+  // 枚举常量初始化时，会自动为初始化这两个字段，设置相应的值，所以才在构造方法中添加了两个参数
+  Operator$1(String name, int ordinal, String operator);
+
+  public int calculate(int, int);
+    descriptor: (II)I
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: iload_1
+         1: iload_2
+         2: iadd
+         3: ireturn
+      LineNumberTable:
+        line 7: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0  this   Lenumdemo/Operator$1;
+            0       4     1     a   I
+            0       4     2     b   I
+}
+SourceFile: "Operator.java"
+EnclosingMethod: #3.#0                  // enumdemo.Operator
+InnerClasses:
+     static #2; //class enumdemo/Operator$1

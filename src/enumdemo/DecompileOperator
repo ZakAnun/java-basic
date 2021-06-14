@@ -1,0 +1,283 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/bin/javap -c -verbose enumdemo.Operator
+Classfile /Users/liminglin/github/java-basic/build/classes/java/main/enumdemo/Operator.class
+  Last modified Jun 14, 2021; size 1691 bytes
+  MD5 checksum 0d8f63fb236332b9c5ef81594ebb2efa
+  Compiled from "Operator.java"
+public abstract class enumdemo.Operator extends java.lang.Enum<enumdemo.Operator>
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER, ACC_ABSTRACT, ACC_ENUM
+Constant pool:
+   #1 = Methodref          #5.#69         // enumdemo/Operator."<init>":(Ljava/lang/String;ILjava/lang/String;)V
+   #2 = Fieldref           #5.#70         // enumdemo/Operator.$VALUES:[Lenumdemo/Operator;
+   #3 = Methodref          #71.#72        // "[Lenumdemo/Operator;".clone:()Ljava/lang/Object;
+   #4 = Class              #39            // "[Lenumdemo/Operator;"
+   #5 = Class              #73            // enumdemo/Operator
+   #6 = Methodref          #29.#74        // java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+   #7 = Methodref          #29.#75        // java/lang/Enum."<init>":(Ljava/lang/String;I)V
+   #8 = Fieldref           #5.#76         // enumdemo/Operator.operator:Ljava/lang/String;
+   #9 = Class              #77            // enumdemo/Operator$1
+  #10 = String             #31            // ADD
+  #11 = String             #78            // +
+  #12 = Methodref          #9.#69         // enumdemo/Operator$1."<init>":(Ljava/lang/String;ILjava/lang/String;)V
+  #13 = Fieldref           #5.#79         // enumdemo/Operator.ADD:Lenumdemo/Operator;
+  #14 = Class              #80            // enumdemo/Operator$2
+  #15 = String             #33            // SUB
+  #16 = String             #81            // -
+  #17 = Methodref          #14.#69        // enumdemo/Operator$2."<init>":(Ljava/lang/String;ILjava/lang/String;)V
+  #18 = Fieldref           #5.#82         // enumdemo/Operator.SUB:Lenumdemo/Operator;
+  #19 = Class              #83            // enumdemo/Operator$3
+  #20 = String             #34            // MUL
+  #21 = String             #84            // *
+  #22 = Methodref          #19.#69        // enumdemo/Operator$3."<init>":(Ljava/lang/String;ILjava/lang/String;)V
+  #23 = Fieldref           #5.#85         // enumdemo/Operator.MUL:Lenumdemo/Operator;
+  #24 = Class              #86            // enumdemo/Operator$4
+  #25 = String             #35            // DIV
+  #26 = String             #87            // /
+  #27 = Methodref          #24.#69        // enumdemo/Operator$4."<init>":(Ljava/lang/String;ILjava/lang/String;)V
+  #28 = Fieldref           #5.#88         // enumdemo/Operator.DIV:Lenumdemo/Operator;
+  #29 = Class              #89            // java/lang/Enum
+  #30 = Utf8               InnerClasses
+  #31 = Utf8               ADD
+  #32 = Utf8               Lenumdemo/Operator;
+  #33 = Utf8               SUB
+  #34 = Utf8               MUL
+  #35 = Utf8               DIV
+  #36 = Utf8               operator
+  #37 = Utf8               Ljava/lang/String;
+  #38 = Utf8               $VALUES
+  #39 = Utf8               [Lenumdemo/Operator;
+  #40 = Utf8               values
+  #41 = Utf8               ()[Lenumdemo/Operator;
+  #42 = Utf8               Code
+  #43 = Utf8               LineNumberTable
+  #44 = Utf8               valueOf
+  #45 = Utf8               (Ljava/lang/String;)Lenumdemo/Operator;
+  #46 = Utf8               LocalVariableTable
+  #47 = Utf8               name
+  #48 = Utf8               <init>
+  #49 = Utf8               (Ljava/lang/String;ILjava/lang/String;)V
+  #50 = Utf8               this
+  #51 = Utf8               Signature
+  #52 = Utf8               (Ljava/lang/String;)V
+  #53 = Utf8               calculate
+  #54 = Utf8               (II)I
+  #55 = Utf8               getOperator
+  #56 = Utf8               ()Ljava/lang/String;
+  #57 = Utf8               (Ljava/lang/String;ILjava/lang/String;Lenumdemo/Operator$1;)V
+  #58 = Utf8               x0
+  #59 = Utf8               x1
+  #60 = Utf8               I
+  #61 = Utf8               x2
+  #62 = Utf8               x3
+  #63 = Utf8               Lenumdemo/Operator$1;
+  #64 = Utf8               <clinit>
+  #65 = Utf8               ()V
+  #66 = Utf8               Ljava/lang/Enum<Lenumdemo/Operator;>;
+  #67 = Utf8               SourceFile
+  #68 = Utf8               Operator.java
+  #69 = NameAndType        #48:#49        // "<init>":(Ljava/lang/String;ILjava/lang/String;)V
+  #70 = NameAndType        #38:#39        // $VALUES:[Lenumdemo/Operator;
+  #71 = Class              #39            // "[Lenumdemo/Operator;"
+  #72 = NameAndType        #90:#91        // clone:()Ljava/lang/Object;
+  #73 = Utf8               enumdemo/Operator
+  #74 = NameAndType        #44:#92        // valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+  #75 = NameAndType        #48:#93        // "<init>":(Ljava/lang/String;I)V
+  #76 = NameAndType        #36:#37        // operator:Ljava/lang/String;
+  #77 = Utf8               enumdemo/Operator$1
+  #78 = Utf8               +
+  #79 = NameAndType        #31:#32        // ADD:Lenumdemo/Operator;
+  #80 = Utf8               enumdemo/Operator$2
+  #81 = Utf8               -
+  #82 = NameAndType        #33:#32        // SUB:Lenumdemo/Operator;
+  #83 = Utf8               enumdemo/Operator$3
+  #84 = Utf8               *
+  #85 = NameAndType        #34:#32        // MUL:Lenumdemo/Operator;
+  #86 = Utf8               enumdemo/Operator$4
+  #87 = Utf8               /
+  #88 = NameAndType        #35:#32        // DIV:Lenumdemo/Operator;
+  #89 = Utf8               java/lang/Enum
+  #90 = Utf8               clone
+  #91 = Utf8               ()Ljava/lang/Object;
+  #92 = Utf8               (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+  #93 = Utf8               (Ljava/lang/String;I)V
+{
+  public static final enumdemo.Operator ADD;
+    descriptor: Lenumdemo/Operator;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL, ACC_ENUM
+
+  public static final enumdemo.Operator SUB;
+    descriptor: Lenumdemo/Operator;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL, ACC_ENUM
+
+  public static final enumdemo.Operator MUL;
+    descriptor: Lenumdemo/Operator;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL, ACC_ENUM
+
+  public static final enumdemo.Operator DIV;
+    descriptor: Lenumdemo/Operator;
+    flags: ACC_PUBLIC, ACC_STATIC, ACC_FINAL, ACC_ENUM
+
+  // 编译器添加公共静态方法 values() ，可以拿到这个枚举值的数组（通过 clone() 拿到一个数组）
+  public static enumdemo.Operator[] values();
+    descriptor: ()[Lenumdemo/Operator;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: getstatic     #2                  // Field $VALUES:[Lenumdemo/Operator;
+         3: invokevirtual #3                  // Method "[Lenumdemo/Operator;".clone:()Ljava/lang/Object;
+         6: checkcast     #4                  // class "[Lenumdemo/Operator;"
+         9: areturn
+      LineNumberTable:
+        line 3: 0
+  // 这个 values() 代码相当于
+  public static enumdemo.Operator[] values() {
+    return (Operator[])$VALUES.clone();
+  }
+
+  // 编译器添加公共静态方法 valueOf()，调用这个方法可以拿到对应的枚举值
+  public static enumdemo.Operator valueOf(java.lang.String);
+    descriptor: (Ljava/lang/String;)Lenumdemo/Operator;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: ldc           #5                  // class enumdemo/Operator
+         2: aload_0
+         3: invokestatic  #6                  // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+         6: checkcast     #5                  // class enumdemo/Operator
+         9: areturn
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0  name   Ljava/lang/String;
+  // valueOf() 相当于
+  public static enumdemo.Operator[] valueOf() {
+    return (Operator)Enum.valueOf(Operator.class, name);
+  }
+
+  public abstract int calculate(int, int);
+    descriptor: (II)I
+    flags: ACC_PUBLIC, ACC_ABSTRACT
+
+  public java.lang.String getOperator();
+    descriptor: ()Ljava/lang/String;
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #8                  // Field operator:Ljava/lang/String;
+         4: areturn
+      LineNumberTable:
+        line 41: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lenumdemo/Operator;
+
+  enumdemo.Operator(java.lang.String, int, java.lang.String, enumdemo.Operator$1);
+    descriptor: (Ljava/lang/String;ILjava/lang/String;Lenumdemo/Operator$1;)V
+    flags: ACC_SYNTHETIC
+    Code:
+      stack=4, locals=5, args_size=5
+         0: aload_0
+         1: aload_1
+         2: iload_2
+         3: aload_3
+         4: invokespecial #1                  // Method "<init>":(Ljava/lang/String;ILjava/lang/String;)V
+         7: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0  this   Lenumdemo/Operator;
+            0       8     1    x0   Ljava/lang/String;
+            0       8     2    x1   I
+            0       8     3    x2   Ljava/lang/String;
+            0       8     4    x3   Lenumdemo/Operator$1;
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=5, locals=0, args_size=0
+         // 创建一个 Operator$1 对象
+         0: new           #9                  // class enumdemo/Operator$1
+         3: dup
+         // 接下来的三条指令分别是把三个参数推送到栈顶，然后调用 Operator$1 的编译器生成的 <init> 方法
+         4: ldc           #10                 // String ADD
+         6: iconst_0
+         7: ldc           #11                 // String +
+         // 调用 <init> 方法
+         9: invokespecial #12                 // Method enumdemo/Operator$1."<init>":(Ljava/lang/String;ILjava/lang/String;)V
+        12: putstatic     #13                 // Field ADD:Lenumdemo/Operator;
+        // 接下来是分别初始化另外三个属性SUBTRACT、MULTIPLY、DIVIDE
+        15: new           #14                 // class enumdemo/Operator$2
+        18: dup
+        19: ldc           #15                 // String SUB
+        21: iconst_1
+        22: ldc           #16                 // String -
+        24: invokespecial #17                 // Method enumdemo/Operator$2."<init>":(Ljava/lang/String;ILjava/lang/String;)V
+        27: putstatic     #18                 // Field SUB:Lenumdemo/Operator;
+        30: new           #19                 // class enumdemo/Operator$3
+        33: dup
+        34: ldc           #20                 // String MUL
+        36: iconst_2
+        37: ldc           #21                 // String *
+        39: invokespecial #22                 // Method enumdemo/Operator$3."<init>":(Ljava/lang/String;ILjava/lang/String;)V
+        42: putstatic     #23                 // Field MUL:Lenumdemo/Operator;
+        45: new           #24                 // class enumdemo/Operator$4
+        48: dup
+        49: ldc           #25                 // String DIV
+        51: iconst_3
+        52: ldc           #26                 // String /
+        54: invokespecial #27                 // Method enumdemo/Operator$4."<init>":(Ljava/lang/String;ILjava/lang/String;)V
+        57: putstatic     #28                 // Field DIV:Lenumdemo/Operator;
+        // 下面是new了一个长度为 4 的 Operator 类型的数组，并分别设置数组中各元素的值为上面的四个属性的值
+        60: iconst_4
+        61: anewarray     #5                  // class enumdemo/Operator
+        64: dup
+        65: iconst_0
+        66: getstatic     #13                 // Field ADD:Lenumdemo/Operator;
+        69: aastore
+        70: dup
+        71: iconst_1
+        72: getstatic     #18                 // Field SUB:Lenumdemo/Operator;
+        75: aastore
+        76: dup
+        77: iconst_2
+        78: getstatic     #23                 // Field MUL:Lenumdemo/Operator;
+        81: aastore
+        82: dup
+        83: iconst_3
+        84: getstatic     #28                 // Field DIV:Lenumdemo/Operator;
+        87: aastore
+        // 下面是设置属性$VALUES的值为刚创建的数组
+        88: putstatic     #2                  // Field $VALUES:[Lenumdemo/Operator;
+        91: return
+      LineNumberTable:
+        line 4: 0
+        line 10: 15
+        line 16: 30
+        line 22: 45
+        line 3: 60
+      // 从 118 到 246 行代码相当于以下代码（可以用 jad 工具来看看）
+      Operator ADD = new Operator1();
+      Operator SUBTRACT = new Operator1();
+      Operator MULTIPLY = new Operator1();
+      Operator DIVIDE = new Operator1();
+      Operator[] $VALUES = new Operator[4];
+      $VALUES[0] = ADD;
+      $VALUES[1] = SUBTRACT;
+      $VALUES[2] = MULTIPLY;
+      $VALUES[3] = DIVIDE;
+}
+Signature: #66                          // Ljava/lang/Enum<Lenumdemo/Operator;>;
+SourceFile: "Operator.java"
+// 这部分可以看出枚举 Operator 一个枚举值就是一个内部类
+InnerClasses:
+     static #24; //class enumdemo/Operator$4
+     static #19; //class enumdemo/Operator$3
+     static #14; //class enumdemo/Operator$2
+     static #9; //class enumdemo/Operator$1
+
+Process finished with exit code 0
